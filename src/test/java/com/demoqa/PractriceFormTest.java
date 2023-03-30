@@ -1,7 +1,9 @@
 package com.demoqa;
 
 import org.junit.jupiter.api.Test;
+
 import java.io.File;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -43,7 +45,7 @@ public class PractriceFormTest extends TestBase {
         $(byText("Sports")).click();
 
         // загружаем файл
-        $("#uploadPicture").uploadFile(new File("src/test/resourses/images/1.jpg"));
+        $("#uploadPicture").uploadFile(new File("src/test/resources/images/1.jpg"));
 
         // указываем адрес
         $("#currentAddress").setValue("3-rd Gr");
