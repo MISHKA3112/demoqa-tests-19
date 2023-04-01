@@ -13,7 +13,7 @@ public class PractriceFormTest extends TestBase {
     void practiceForm() {
         // открываем сайт
         open("/automation-practice-form");
-
+// get conflict
         // убрать рекламу
         executeJavaScript("$('#fixedban').remove()");
         executeJavaScript("$('footer').remove()");
